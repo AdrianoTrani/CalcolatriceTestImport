@@ -12,6 +12,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+//calcolatrice super semplice
+//author Adriano
 public class MainClass extends Application{
 
 	//DICHIARAZIONE
@@ -48,7 +50,7 @@ public class MainClass extends Application{
 	Double secondNumber; //secondo operando
 	Integer operation; 
 	/* OPERATION
-	 * -1 = ho già il primo operando, ora è tempo di scegliere l'operazione
+	 * -1 = ho giÃ  il primo operando, ora Ã¨ tempo di scegliere l'operazione
 	 * 0 = reset totale
 	 * 1 = addizione
 	 * 2 = sottrazione
@@ -295,7 +297,7 @@ public class MainClass extends Application{
 				}
 				//tasto funzionante
 				else {
-					//se NON esiste un primo operando OR ho già scelto un'altra operazione
+					//se NON esiste un primo operando OR ho giÃ  scelto un'altra operazione
 					if(firstNumber==null || operation>0) {
 						labelResult.setText("ERROR");
 						isResetNeeded = true;
@@ -321,7 +323,7 @@ public class MainClass extends Application{
 				}
 				//tasto funzionante
 				else {
-					//se NON esiste un primo operando OR ho già scelto un'altra operazione
+					//se NON esiste un primo operando OR ho giÃ  scelto un'altra operazione
 					if(firstNumber==null || operation>0) {
 						labelResult.setText("ERROR");
 						isResetNeeded = true;
@@ -347,7 +349,7 @@ public class MainClass extends Application{
 				}
 				//tasto funzionante
 				else {
-					//se NON esiste un primo operando OR ho già scelto un'altra operazione
+					//se NON esiste un primo operando OR ho giÃ  scelto un'altra operazione
 					if(firstNumber==null || operation>0) {
 						labelResult.setText("ERROR");
 						isResetNeeded = true;
@@ -371,7 +373,7 @@ public class MainClass extends Application{
 				}
 				//tasto funzionante
 				else {
-					//se NON esiste un primo operando OR ho già scelto un'altra operazione
+					//se NON esiste un primo operando OR ho giÃ  scelto un'altra operazione
 					if(firstNumber==null || operation>0) {
 						labelResult.setText("ERROR");
 						isResetNeeded = true;
@@ -460,25 +462,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 0.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+0.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 0.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+0.0;
 						}
@@ -504,25 +506,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 1.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+1.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 1.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+1.0;
 						}
@@ -548,25 +550,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 2.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+2.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 2.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+2.0;
 						}
@@ -592,25 +594,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 3.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+3.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 3.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+3.0;
 						}
@@ -636,25 +638,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 4.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+4.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 4.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+4.0;
 						}
@@ -680,25 +682,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 5.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+5.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 5.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+5.0;
 						}
@@ -724,25 +726,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 6.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+6.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 6.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+6.0;
 						}
@@ -768,25 +770,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 7.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+7.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 7.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+7.0;
 						}
@@ -812,25 +814,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 8.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+8.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 8.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+8.0;
 						}
@@ -856,25 +858,25 @@ public class MainClass extends Application{
 						if(firstNumber==null) {
 							firstNumber = 9.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							firstNumber = (firstNumber*10)+9.0;
 							
 						}
 						labelResult.setText(firstNumber.toString());
 					}
-					//avevo già il primo operando e dovevo inserire l'operazione
+					//avevo giÃ  il primo operando e dovevo inserire l'operazione
 					if(operation == -1) {
 						labelResult.setText("Error");
 						isResetNeeded = true;
 					}
-					//ho già l'operazione(+,-,*,/), sto inserendo il secondo operando
+					//ho giÃ  l'operazione(+,-,*,/), sto inserendo il secondo operando
 					if(operation >= 1 && operation <=4){
 						//non ho ancora inserito la prima cifra
 						if(secondNumber==null) {
 							secondNumber = 9.0;
 						}
-						//ho già inserito altre cifre
+						//ho giÃ  inserito altre cifre
 						else {
 							secondNumber = (secondNumber*10)+9.0;
 						}
